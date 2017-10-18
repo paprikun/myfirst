@@ -1,0 +1,264 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "DuckDuckGo",
+    "line": 1,
+    "id": "duckduckgo",
+    "tags": [],
+    "uri": "features\\duckduckgo-search.feature",
+    "elements": [
+      {
+        "id": "duckduckgo;searching-duckduckgo",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Searching DuckDuckGo",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "I open DuckDuckGo search page",
+            "match": {
+              "location": "step_definitions\\steps.js:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 14944
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "the title is \"DuckDuckGo\"",
+            "match": {
+              "location": "step_definitions\\steps.js:50"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 88
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "the DuckDuckGo search form exists",
+            "match": {
+              "location": "step_definitions\\steps.js:70"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 211
+            }
+          }
+        ]
+      },
+      {
+        "id": "duckduckgo;searching-duckduckgo-again",
+        "keyword": "Scenario",
+        "line": 9,
+        "name": "Searching DuckDuckGo again",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 11,
+            "name": "I open DuckDuckGo search page",
+            "match": {
+              "location": "step_definitions\\steps.js:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 503
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 12,
+            "name": "the title is \"DuckDuckGo\"",
+            "match": {
+              "location": "step_definitions\\steps.js:50"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 94
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 13,
+            "name": "the DuckDuckGo search form exists",
+            "match": {
+              "location": "step_definitions\\steps.js:70"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 189
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "keyword": "Feature",
+    "name": "Google Search",
+    "line": 1,
+    "id": "google-search",
+    "tags": [],
+    "uri": "features\\google-search.feature",
+    "elements": [
+      {
+        "id": "google-search;searching-google",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Searching Google",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "I open Google`s search page",
+            "match": {
+              "location": "step_definitions\\steps.js:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1514
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "the title is \"Google\"",
+            "match": {
+              "location": "step_definitions\\steps.js:50"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 86
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "the Google search form exists",
+            "match": {
+              "location": "step_definitions\\steps.js:66"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 207
+            }
+          }
+        ]
+      },
+      {
+        "id": "google-search;searching-google-again",
+        "keyword": "Scenario",
+        "line": 9,
+        "name": "Searching Google again",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 11,
+            "name": "I open Google`s search page",
+            "match": {
+              "location": "step_definitions\\steps.js:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 655
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 12,
+            "name": "the title is \"Google\"",
+            "match": {
+              "location": "step_definitions\\steps.js:50"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 108
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 13,
+            "name": "the Google search form exists",
+            "match": {
+              "location": "step_definitions\\steps.js:66"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 187
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "keyword": "Feature",
+    "name": "Kinopoisk",
+    "line": 1,
+    "id": "kinopoisk",
+    "tags": [],
+    "uri": "features\\kinopoisk.feature",
+    "elements": [
+      {
+        "id": "kinopoisk;searching-kinopoisk",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Searching Kinopoisk",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "I open Kinopoisk search page",
+            "match": {
+              "location": "step_definitions\\steps.js:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 8955
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "Рейтинг фильма больше 7",
+            "match": {
+              "location": "step_definitions\\steps.js:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 15426
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
