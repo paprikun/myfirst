@@ -22,7 +22,7 @@ defineSupportCode(({ Given, Then, When }) => {
 	  return client.setValue('input[name=kp_query]', name);
   });
  
-   When(/^Check that rating is visible$/, () => {
+   Then(/^Check that rating is visible$/, () => {
 	client.pause(1000);
 	return client.waitForElementVisible("div[class*='first'] > a > div[class*='positive']",1000);
   });
