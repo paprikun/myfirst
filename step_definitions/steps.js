@@ -22,15 +22,17 @@ defineSupportCode(({ Given, Then, When }) => {
 	  return client.setValue('input[name=kp_query]', name);
   });
  
-   Then(/^Check that rating is visible$/, () => {
+
+ 
+   Then(/^Click on ref of film$/, () => {
 	client.pause(1000);
-	return client.waitForElementVisible("div[class*='first'] > a > div[class*='positive']",1000);
+	return client.waitForElementVisible("div[class*='first'] > a",1000).click("div[class*='first'] > a");
   });
-  
+ 
+ 
   Then(/^Film rating is higher than (.[0-9]?)$/, (data) => {	
-  //div[class*='first'] > a > div[class*='positive']
-  //a[href='/film/453397/sr/2/'] > div:last-child
-	return client.getText("div[class*='first'] > a > div[class*='positive']", function(result) {
+	client.waitForElementVisible("span.rating_ball",1000);
+	return client.getText("span.rating_ball", function(result) {
 		var rate = parseFloat(result.value);
 		console.log(rate);
 		console.log(data);
