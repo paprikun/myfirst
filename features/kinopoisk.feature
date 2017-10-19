@@ -4,5 +4,5 @@ Scenario: Searching Kinopoisk
 
   Given I open Kinopoisk search page
   When I find film "Оно"
-  And Check that rating is visible
-  Then Film rating is higher than 7
+  Then Check that rating is visible
+  And Film rating is higher than 7
