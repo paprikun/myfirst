@@ -22,7 +22,7 @@ defineSupportCode(({ Given, Then, When }) => {
 				 .setValue('input[name=kp_query]', [name, client.Keys.ENTER])
   });
  
-  When(/^Check that rating is visible$/, () => {
+   When(/^Check that rating is visible$/, () => {
 		return client.assert.visible('div[class=block_left_pad] :nth-child(4) div[class=right]');
   });
   
@@ -35,38 +35,9 @@ defineSupportCode(({ Given, Then, When }) => {
 		});
   });
   
-  
-  Then(/^Login mail$/, () => {
-    return client
-      .waitForElementVisible('body', 1000)
-      .assert.visible('input[name=login]')
-	  .assert.visible('input[name=password]')
-	  .setValue('input[name=login]','paprikun')
-	  .setValue('input[name=password]', ['password', client.Keys.ENTER])
-      .pause(5000);	  
-  });
-
-  Given(/^I open mail$/, () => {
-    return client
-      .url('https://mail.ru/');
-  });
-
-  
   Then(/^the title is "(.*?)"$/, (text) => {
     return client.assert.title(text);
-  });
-  
-  Then(/^write request "(.*?)"$/, (text) => {
-    return client
-      .waitForElementVisible('body', 1000)
-      .assert.title('Google')
-      .assert.visible('input[type=text]')
-	  .setValue('input[type=text]', ['rembrandt van rijn', client.Keys.ENTER])
-	  .assert.containsText('div[id=rso] div[class=srg] :first-child', 'Rembrandt')
-      .end();
-
-  });
-  
+  }); 
 
   Then(/^the Google search form exists$/, () => {
     return client.assert.visible('input[name="q"]');
