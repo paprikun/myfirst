@@ -9,7 +9,7 @@ defineSupportCode(({ Given, Then, When }) => {
 
   Given(/^I open DuckDuckGo search page$/, () => {
     return client
-      .url('https://duckduckgo.com/');
+      .url('https://duckduckgo.com');
   });
   
   Given(/^I open Kinopoisk search page$/, () => {
