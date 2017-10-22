@@ -9,9 +9,11 @@ require('nightwatch-cucumber')({
 
 module.exports = {
   output_folder: 'reports',
+  globals_path: 'globals/globalsModule.js',
   custom_assertions_path: '',
   live_output: false,
   disable_colors: false,
+  page_object_path: 'pages/main.js',
   selenium: {
     start_process: true,
     server_path: seleniumServer.path,

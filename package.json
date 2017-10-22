@@ -18,6 +18,7 @@
     "nightwatch": "^0.9.16",
     "nightwatch-cucumber": "^8.2.2",
     "phantomjs-prebuilt": "^2.1.15",
-    "selenium-server": "^3.5.3"
+    "selenium-server": "^3.5.3",
+    "cucumber-html-reporter": "^2.0.3"
   }
 }
