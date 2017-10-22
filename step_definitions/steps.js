@@ -38,7 +38,7 @@ defineSupportCode(({ Given, Then, When }) => {
 	  .assert.visible('input[name=password]')
 	  .setValue('input[name=login]','paprikun')
 	  .setValue('input[name=password]', ['password', client.Keys.ENTER])
-      .pause(5000);	  
+      .pause(5200);	  
   });
 
   Given(/^I open mail$/, () => {
