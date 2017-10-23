@@ -66,4 +66,5 @@ defineSupportCode(({ Given, Then, When }) => {
   Then(/^the DuckDuckGo search form exists$/, () => {
     return client.assert.visible('input[name="q"]');
   });
+
 });

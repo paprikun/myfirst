@@ -1,6 +1,7 @@
 module.exports = {
   elements: {
-  	title: 'h2.titleH1.experts__header-text'
+  	title: 'h2.titleH1.experts__header-text',
+    citylist: 'div#select2-drop'
   },
   sections: {
   	header: {
@@ -12,11 +13,17 @@ module.exports = {
   	},
   	search: {
   		selector: 'form.form.form-searchExpert',
-  		elemets: {
+  		elements: {
   			service: 'div#s2id_autogen5',
   			geo: 'div#s2id_autogen7',
   			searchButton: 'button.btn-block.btn-middle'
   		}
-  	}
+  	},
+    content: {
+      selector: 'main#content div.l-center',
+      elements: {
+        offers: 'ul.listCol__list.js-profiles-list'
+      }
+    }
   }
 };
