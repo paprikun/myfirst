@@ -1,7 +1,8 @@
 const { client } = require('nightwatch-cucumber');
 const { defineSupportCode } = require('cucumber');
-var prices = [];
-var profi = client.page.profi();
+let prices = [];
+let profi = client.page.profi();
+let mainhandle;
 defineSupportCode(({ Given, Then, When }) => {
   Given(/^открыта главная страница profi$/, () => {
     return client
@@ -67,22 +68,29 @@ defineSupportCode(({ Given, Then, When }) => {
   });
 
   When (/^кликнули на "(.*?)"$/, (name) => {
+
+  	client.windowHandle( function(result) {
+		mainhandle = result.value;
+  	});
   	return profi.section.footer.click('@conditions');
   });
 
   When (/^перейти на соседнюю вкладку$/, () => {
 	return client.windowHandles( function(result) {
-		var handle = result.value[1];
-		client.switchWindow(handle);
-		client.pause(3000);
-	  });
-
+		let handle;
+		if (result.value[0] == mainhandle){
+			 handle = result.value[1];
+		}if (result.value[1] == mainhandle){
+			 handle = result.value[0];
+		}
+			client.switchWindow(handle);
+	  })
   });
 
-
   Then (/^заголовок "(.*?)"$/, (name) => {
-  	console.log(client.title());
-  	return client.assert.title(name);
+  	return client.assert.title(name)
+  	.closeWindow()
+  	.pause(3000);
   });
 
 });

@@ -1,4 +1,3 @@
-
 Feature: Profi
 
 Scenario: Test Profi
@@ -6,7 +5,6 @@ Scenario: Test Profi
   Given открыта главная страница profi
   When кликнули на переключатель городов
   Then открылся список городов
-
 
 Scenario: Test finder
 
@@ -23,7 +21,6 @@ Scenario: Test offers
 	Then проверить что все цены больше 100
 
 @test
-
 Scenario: Test other tab
 
 	Given открыта главная страница profi
