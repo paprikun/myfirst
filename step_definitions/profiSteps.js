@@ -45,12 +45,10 @@ defineSupportCode(({ Given, Then, When }) => {
   	.elements('css selector', 'b.completed_orders__order__details__price', function(result) {
 
 		var els = result.value;
-        var i = 0;
         els.forEach(function(el, j){
             client.elementIdText(el.ELEMENT, function(text) {
                 prices[j] = parseInt(text.value);
                 //console.log(prices[j]);
-                //i++;
             });
         });
 	
