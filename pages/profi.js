@@ -20,10 +20,16 @@ module.exports = {
   		}
   	},
     content: {
-      selector: 'main#content div.l-center',
+      selector: 'main#content',
       elements: {
-        offers: 'ul.listCol__list.js-profiles-list',
+        offers: 'div.desktop-profile__item',
         price: 'b.completed_orders__order__details__price'
+      }
+    },
+    footer: {
+      selector: 'div#footer',
+      elements: {
+        conditions: 'a[href="/documents/legal/"]'
       }
     }
   }
