@@ -22,7 +22,8 @@ module.exports = {
     content: {
       selector: 'main#content div.l-center',
       elements: {
-        offers: 'ul.listCol__list.js-profiles-list'
+        offers: 'ul.listCol__list.js-profiles-list',
+        price: 'b.completed_orders__order__details__price'
       }
     }
   }
